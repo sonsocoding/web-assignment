@@ -10,7 +10,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
             background-color: #f4f4f9;
         }
@@ -20,12 +20,76 @@
             padding: 40px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 90%;
+        }
+        h1 {
+            margin-top: 0;
+            color: #333;
+        }
+        .links {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .card {
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            padding: 15px;
+            background: #fafbfc;
+            text-align: left;
+        }
+        .card h3 {
+            margin: 0 0 10px 0;
+            font-size: 16px;
+            color: #24292e;
+        }
+        .card .btn-group {
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 8px 14px;
+            background-color: #0366d6;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+        .btn:hover {
+            background-color: #024ea4;
+        }
+        .btn-secondary {
+            background-color: #2ea44f;
+        }
+        .btn-secondary:hover {
+            background-color: #22863a;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Hello World</h1>
+        <h1>Assignment 4 Links</h1>
+        <div class="links">
+            <div class="card">
+                <h3>Bài tập 2: JS Tin tức & Giỏ hàng</h3>
+                <div class="btn-group">
+                    <a href="asm4new/bai2/news.html" class="btn">2a - Tin tức</a>
+                    <a href="asm4new/bai2/index.html" class="btn btn-secondary">2b - Giỏ hàng</a>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Bài tập 3: JS Gallery & Tin nhanh</h3>
+                <div class="btn-group">
+                    <a href="asm4new/bai3/index.html" class="btn">3a - Gallery</a>
+                    <a href="asm4new/bai3/news.html" class="btn btn-secondary">3b - Tin nhanh</a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
